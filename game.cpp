@@ -15,7 +15,11 @@ game::game(int width, int height, bool debug) :
 		height(height),
 		debug(debug) {
 	// TODO Create the game board: 2D vector of room objects
+	
+	map.resize(height, std::vector<Room>(width));
 
+
+	
 	// TODO Randomly insert events (2 bat_swarms, 2 bottomless_pits,
 	// 1 wumpus, 1 gold, 2 arrows, 1 escape rope) into the board
 }

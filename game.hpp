@@ -9,7 +9,7 @@
 class game {
 private:
 	// TODO declare a 2D vector of Room objects:
-
+	std::vector<std::vector<Room>> map;
 	// Suggested member variables:
 	int num_arrows = 0; 	// keep track of number of arrows remaining
 	int width;				// width of the game grid
@@ -17,6 +17,7 @@ private:
 	bool debug;				// debug mode or not
 
 	// TODO Feel free to add more member variables if you'd like
+	
 
 public:
 	// Suggested functions (there are no required functions here):
